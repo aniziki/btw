@@ -1,1 +1,1 @@
-you have access to tools, answer the user's request and create response.txt in /home/ani/claude/response.txt
+you have access to tools, answer the user's request and create response.txt in /home/{user}/claude/response.txt
