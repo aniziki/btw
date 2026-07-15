@@ -1,16 +1,16 @@
-# btw
 
-Small reminder/usage utilities.
+patch claude code to allow subagent that spawns with /btw to execute tools
 
 ## Usage
 
-Show usage stats:
+displays model switching by monitoring ~/.claude/projects/ 
 
+Show usage stats:
 ```bash
 python3 ./usage.py
 ```
 
-Set a reminder from a file:
+Set system reminder from file for /btw prompt:
 
 ```bash
 python3 ./btw-reminder.py set my-reminder.txt
@@ -21,10 +21,10 @@ python3 ./btw-reminder.py set my-reminder.txt
 Run the patched binary at:
 
 ```
-/home/<user>/.local/share/claude/versions/<version>.btw-patched
+/home/<user>/.local/share/claude/versions/{version}.btw-patched
 ```
+/Model: `fable`
 
-Model: `fable`
 
 ```
  /btw
