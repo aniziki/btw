@@ -1,4 +1,5 @@
 
+
 patch claude code to allow subagent that spawns with /btw to execute tools
 
 ## Usage
@@ -14,6 +15,12 @@ Set system reminder from file for /btw prompt:
 
 ```bash
 python3 ./btw-reminder.py set my-reminder.txt
+```
+
+View current reminder and byte budget:
+
+```bash
+python3 ./btw-reminder.py show
 ```
 
 ## Patched binary
@@ -46,4 +53,4 @@ Run the patched binary at:
 ```
 honestly hit or miss if tool executes or classifier responds the model tried to make a tool call, either way tho the model makes a tool call 
 
-forking the patched btw looks to use the parent model, i guess because of tool access so it just needs to execute instead of being called to classify/check prompt again? idk  
+forking the patched btw looks to use the parent model, i guess because of tool access so it just needs to execute instead of being called to classify/check prompt again? idk
